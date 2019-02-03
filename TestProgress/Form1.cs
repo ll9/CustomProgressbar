@@ -25,7 +25,7 @@ namespace TestProgress
 
             var pro = new ProgressbarControl { Text = "Lese Excel..." };
             pro.Show();
-            await Task.Run((() => Thread.Sleep(5000)));
+            await Task.Run((() => Thread.Sleep(50000)));
             pro.Close();
             button1.Enabled = true;
         }
